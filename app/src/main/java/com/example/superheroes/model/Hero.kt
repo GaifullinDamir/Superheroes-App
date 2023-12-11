@@ -13,21 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@file:Suppress("UnstableApiUsage")
 
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-rootProject.name = "Superheroes"
-include(":app")
+package com.example.superheroes.model
+
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+data class Hero(
+    @StringRes val nameRes: Int,
+    @StringRes val descriptionRes: Int,
+    @DrawableRes val imageRes: Int
+)
