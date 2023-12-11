@@ -68,12 +68,12 @@ fun HeroesList(
 ) {
     val visibleState = remember {
         MutableTransitionState(false).apply {
-            // Start the animation immediately.
+            // Start  the animation immediately.
             targetState = true
         }
     }
 
-    // Fade in entry animation for the entire list
+    // Fade in entry animat ion for the  entire list
     AnimatedVisibility(
         visibleState = visibleState,
         enter = fadeIn(

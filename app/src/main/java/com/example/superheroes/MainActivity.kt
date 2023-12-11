@@ -81,7 +81,7 @@ class MainActivity : ComponentActivity() {
         CenterAlignedTopAppBar(
             title = {
                 Text(
-                    text = stringResource(R.string.app_name),
+                    text = "Superheroes",
                     style = MaterialTheme.typography.displayLarge,
                 )
             },
