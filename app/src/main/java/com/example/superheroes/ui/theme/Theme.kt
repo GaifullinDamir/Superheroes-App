@@ -101,7 +101,7 @@ private val DarkColors = darkColorScheme(
 fun SuperheroesTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    // Dynamic color in this app is turned off for learning purposes
+    // Dynamic color in this app is turned off for learn ing purposes
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
@@ -130,7 +130,7 @@ fun SuperheroesTheme(
 }
 
 /**
- * Sets up edge-to-edge for the window of this [view]. The system icon colors are set to either
+ * Sets up edge-to-edge for the win dow of this [view]. The system  icon colors are set to either
  * light or dark depending on whether the [darkTheme] is enabled or not.
  */
 private fun setUpEdgeToEdge(view: View, darkTheme: Boolean) {
@@ -140,7 +140,7 @@ private fun setUpEdgeToEdge(view: View, darkTheme: Boolean) {
     val navigationBarColor = when {
         Build.VERSION.SDK_INT >= 29 -> Color.Transparent.toArgb()
         Build.VERSION.SDK_INT >= 26 -> Color(0xFF, 0xFF, 0xFF, 0x63).toArgb()
-        // Min sdk version for this app is 24, this block is for SDK versions 24 and 25
+        // Min sdk version for this app  is 24, this block is fo r SDK versions 24 and 25
         else -> Color(0x00, 0x00, 0x00, 0x50).toArgb()
     }
     window.navigationBarColor = navigationBarColor
